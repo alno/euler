@@ -7,6 +7,7 @@ There are my solutions for Euler Project problems.
 [{Problem 4}[http://projecteuler.net/index.php?section=problems&id=4]] Haskell
 [{Problem 7}[http://projecteuler.net/index.php?section=problems&id=7]] Haskell
 [{Problem 8}[http://projecteuler.net/index.php?section=problems&id=8]] Haskell
+[{Problem 9}[http://projecteuler.net/index.php?section=problems&id=9]] Haskell
 [{Problem 10}[http://projecteuler.net/index.php?section=problems&id=10]] Haskell
 [{Problem 20}[http://projecteuler.net/index.php?section=problems&id=20]] Haskell
 [{Problem 35}[http://projecteuler.net/index.php?section=problems&id=35]] Haskell
