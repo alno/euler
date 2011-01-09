@@ -1,0 +1,14 @@
+= Euler Project Solutions
+
+There are my solutions for Euler Project problems.
+
+== Solutions and languages
+
+[{Problem 4}[http://projecteuler.net/index.php?section=problems&id=4]] Haskell
+[{Problem 7}[http://projecteuler.net/index.php?section=problems&id=7]] Haskell
+[{Problem 8}[http://projecteuler.net/index.php?section=problems&id=8]] Haskell
+[{Problem 10}[http://projecteuler.net/index.php?section=problems&id=10]] Haskell
+[{Problem 20}[http://projecteuler.net/index.php?section=problems&id=20]] Haskell
+[{Problem 35}[http://projecteuler.net/index.php?section=problems&id=35]] Haskell
+[{Problem 49}[http://projecteuler.net/index.php?section=problems&id=49]] Haskell
+[{Problem 50}[http://projecteuler.net/index.php?section=problems&id=50]] Haskell
