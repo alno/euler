@@ -1,8 +1,8 @@
+-- Brute-force solution, need imporvements
+
 isPrime []    x                  = True
 isPrime (h:t) x | h*h > x        = True
                 | x `mod` h == 0 = False
                 | otherwise      = isPrime t x
 
-primes = 2 : filter (isPrime primes) [3,5..]
-
-prime_10001 = primes !! 10000
+sum_2000000 = sum (takeWhile (\x -> x < 2000000) primes)
