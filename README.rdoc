@@ -9,6 +9,7 @@ There are my solutions for Euler Project problems.
 [{Problem 8}[http://projecteuler.net/index.php?section=problems&id=8]] Haskell
 [{Problem 9}[http://projecteuler.net/index.php?section=problems&id=9]] Haskell
 [{Problem 10}[http://projecteuler.net/index.php?section=problems&id=10]] Haskell
+[{Problem 11}[http://projecteuler.net/index.php?section=problems&id=11]] Ruby
 [{Problem 20}[http://projecteuler.net/index.php?section=problems&id=20]] Haskell
 [{Problem 21}[http://projecteuler.net/index.php?section=problems&id=21]] Haskell
 [{Problem 23}[http://projecteuler.net/index.php?section=problems&id=23]] Haskell
