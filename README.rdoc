@@ -11,8 +11,11 @@ There are my solutions for Euler Project problems.
 [{Problem 10}[http://projecteuler.net/index.php?section=problems&id=10]] Haskell
 [{Problem 20}[http://projecteuler.net/index.php?section=problems&id=20]] Haskell
 [{Problem 21}[http://projecteuler.net/index.php?section=problems&id=21]] Haskell
+[{Problem 23}[http://projecteuler.net/index.php?section=problems&id=23]] Haskell
 [{Problem 24}[http://projecteuler.net/index.php?section=problems&id=24]] Haskell
+[{Problem 25}[http://projecteuler.net/index.php?section=problems&id=25]] Haskell
 [{Problem 35}[http://projecteuler.net/index.php?section=problems&id=35]] Haskell
+[{Problem 36}[http://projecteuler.net/index.php?section=problems&id=36]] Haskell
 [{Problem 49}[http://projecteuler.net/index.php?section=problems&id=49]] Haskell
 [{Problem 50}[http://projecteuler.net/index.php?section=problems&id=50]] Haskell
 [{Problem 52}[http://projecteuler.net/index.php?section=problems&id=52]] Haskell
