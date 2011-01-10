@@ -1,3 +1,5 @@
+-- Brute-force solution, need improvements
+
 import Data.List
 
 divisorSumFrom :: Int -> Int -> Int -> Int
