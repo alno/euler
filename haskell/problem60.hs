@@ -1,18 +1,24 @@
-isPrime []    x                  = True
-isPrime (h:t) x | h*h > x        = True
-                | x `mod` h == 0 = False
-                | otherwise      = isPrime t x
 
-primes = 2 : filter (isPrime primes) [3,5..]
+noDivisors []    x                  = True
+noDivisors (h:t) x | h*h > x        = True
+                   | x `mod` h == 0 = False
+                   | otherwise      = noDivisors t x
+
+-- List of prime numbers
+primes :: [Int]
+primes = 2 : filter (noDivisors primes) [3,5..]
+
+-- Function to check is the number is prime
+isPrime = noDivisors primes
 
 conc a b = read (show a ++ show b)
 
 isAddPrime [] p = True
-isAddPrime (h:t) p = isPrime primes (conc p h) && isPrime primes (conc h p) && isAddPrime t p
+isAddPrime (h:t) p = isPrime (conc p h) && isPrime (conc h p) && isAddPrime t p
 
 expandPrimes set = [ s:set | s <- dropWhile (<=m) primes, isAddPrime set s ] where m = head set
 
-data Variant = Variant{ set :: [Integer], cur :: Integer } deriving (Eq, Show)
+data Variant = Variant{ set :: [Int], cur :: Int } deriving (Eq, Show)
 
 instance Ord Variant where
     compare x y = compare (cur x) (cur y)
