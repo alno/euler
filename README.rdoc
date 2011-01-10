@@ -25,5 +25,6 @@ There are my solutions for Euler Project problems.
 [{Problem 38}[http://projecteuler.net/index.php?section=problems&id=38]] Haskell
 [{Problem 49}[http://projecteuler.net/index.php?section=problems&id=49]] Haskell
 [{Problem 50}[http://projecteuler.net/index.php?section=problems&id=50]] Haskell
+[{Problem 51}[http://projecteuler.net/index.php?section=problems&id=51]] Haskell
 [{Problem 52}[http://projecteuler.net/index.php?section=problems&id=52]] Haskell
 [{Problem 57}[http://projecteuler.net/index.php?section=problems&id=57]] Haskell
