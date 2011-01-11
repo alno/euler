@@ -10,7 +10,7 @@ noDivisors (h:t) x | h*h > x        = True
 
 -- List of prime numbers
 primes :: [Int]
-primes = 2 : filter (noDivisors primes) [3,5..]
+primes = 2 : 3 : filter (noDivisors primes) [ 6*n+ofs | n <- [1..], ofs <- [-1,1] ]
 
 -- Function to check is the number is prime
 isPrime = noDivisors primes

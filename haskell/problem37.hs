@@ -7,7 +7,7 @@ noDivisors (h:t) x | h*h > x        = True
 
 -- List of prime numbers
 primes :: [Integer]
-primes = 2 : filter (noDivisors primes) [3,5..]
+primes = 2 : 3 : filter (noDivisors primes) [ 6*n+ofs | n <- [1..], ofs <- [-1,1] ]
 
 primes2digits = (takeWhile (<100) (dropWhile (<10) primes))
 
