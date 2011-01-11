@@ -33,3 +33,4 @@ There are my solutions for Euler Project problems.
 [{Problem 51}[http://projecteuler.net/index.php?section=problems&id=51]] Haskell
 [{Problem 52}[http://projecteuler.net/index.php?section=problems&id=52]] Haskell
 [{Problem 57}[http://projecteuler.net/index.php?section=problems&id=57]] Haskell
+[{Problem 58}[http://projecteuler.net/index.php?section=problems&id=58]] Haskell
