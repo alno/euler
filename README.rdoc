@@ -39,3 +39,4 @@ There are my solutions for Euler Project problems.
 [{Problem 57}[http://projecteuler.net/index.php?section=problems&id=57]] Haskell
 [{Problem 58}[http://projecteuler.net/index.php?section=problems&id=58]] Haskell
 [{Problem 63}[http://projecteuler.net/index.php?section=problems&id=63]] Haskell
+[{Problem 67}[http://projecteuler.net/index.php?section=problems&id=67]] Ruby
