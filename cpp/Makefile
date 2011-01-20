@@ -11,6 +11,7 @@ all: ${EXECUTABLES}
 
 clean:
 	rm -f $(EXECUTABLES)
+	rm -f *.o *~
 
 ${EXECUTABLES}: ${SOURCES}
 	g++ $@.cpp -o $@

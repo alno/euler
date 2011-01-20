@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 def normal_form( s )
   s = s.clone
 

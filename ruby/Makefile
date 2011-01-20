@@ -6,4 +6,6 @@ run: ${SOURCES}
 	@for PR in ${PROBLEMS}; do echo -n "Running $$PR:\t"; ruby problem$$PR.rb; done
 
 all:
+
 clean:
+	rm -f *~
