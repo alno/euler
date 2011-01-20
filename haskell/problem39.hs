@@ -10,3 +10,7 @@ numSolutions p = length (solutions p)
 tuples = [ (x,numSolutions x) | x <- [1..1000] ]
 
 max_tuple = maximumBy (compare `on` snd) tuples
+
+-- Main
+main :: IO ()
+main = print (fst max_tuple)

@@ -9,3 +9,7 @@ divisorSum = divisorSumFrom 1
 
 amicable_numbers = [ (x,y) | x <- [1..10000], let y = divisorSum x, y < x, x == divisorSum y ]
 sum_amicable_numbers = sum (map (\x -> fst x + snd x) amicable_numbers)
+
+-- Main
+main :: IO ()
+main = print sum_amicable_numbers

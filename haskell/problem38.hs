@@ -16,3 +16,7 @@ pandigitals :: [Integer]
 pandigitals = [ read pd | n <- [1..9999], let pdm = pandigital n, pdm /= Nothing, let Just pd = pdm ]
 
 maxPandigital = last pandigitals
+
+-- Main
+main :: IO ()
+main = print maxPandigital

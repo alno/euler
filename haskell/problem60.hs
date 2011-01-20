@@ -35,3 +35,7 @@ expandPrimeVariants vars = let (p1,p2) = splitPrimeVariants vars; m1 = cur (head
 initial = map (\x -> Variant [x] x ) primes
 
 thesePrimes = iterate expandPrimeVariants initial
+
+-- Main
+main :: IO ()
+main = print "Not completed"

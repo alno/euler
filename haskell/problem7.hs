@@ -12,3 +12,7 @@ primes = 2 : 3 : filter (noDivisors primes) [ 6*n+ofs | n <- [1..], ofs <- [-1,1
 isPrime = noDivisors primes
 
 prime_10001 = primes !! 10000
+
+-- Main
+main :: IO ()
+main = print prime_10001

@@ -10,3 +10,7 @@ isPalyndromicDecAndBin x = isPalyndromic (show x) && isPalyndromic (showBin x)
 palyndromicDecAndBin = filter isPalyndromicDecAndBin [1..999999]
 
 sumPalyndromicDecAndBin = sum palyndromicDecAndBin
+
+-- Main
+main :: IO ()
+main = print sumPalyndromicDecAndBin

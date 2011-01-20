@@ -20,3 +20,10 @@ primes4digits = dropWhile (< 1000) (takeWhile (<= 9999) primes)
 seqs = [ [first, second, third] | first <- primes4digits, second <- primes4digits, second > first,
                                   let third = 2*second-first,
                                   isPermutation first second, isPermutation first third, isPrime third ]
+
+otherSeq = last seqs
+otherSeqConcat = foldl1 (++) (map show otherSeq)
+
+-- Main
+main :: IO ()
+main = print otherSeqConcat

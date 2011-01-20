@@ -28,3 +28,7 @@ isPrime = noDivisors primes
 primePandigitals n = filter isPrime (possiblePrimePandigitals n)
 
 maxPrimePandigital = maximum (concat (map primePandigitals [1..8]))
+
+-- Main
+main :: IO ()
+main = print maxPrimePandigital

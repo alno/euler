@@ -25,3 +25,7 @@ sumPrimeAdd from (s,l) best = let nextSum = primes !! (from+l) + s in if nextSum
 
 sumPrimes = [ sumPrime i | i <- [0..1000] ]
 maxSumPrime = maximumBy (compare `on` snd) sumPrimes
+
+-- Main
+main :: IO ()
+main = print maxSumPrime

@@ -26,3 +26,7 @@ primePercentList = zipWith (\x y -> fromIntegral x / fromIntegral y) (countList 
 sideAndPercent = zipWith (\x y -> (x,y)) [3,5..] (tail primePercentList)
 
 firstTuple = head (dropWhile (\t -> snd t >= 0.1) sideAndPercent)
+
+-- Main
+main :: IO ()
+main = print (fst firstTuple)

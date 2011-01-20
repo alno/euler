@@ -20,3 +20,7 @@ isCircularPrime x = all isPrime (map read (rotations (show x)))
 
 circular_primes = filter isCircularPrime primes
 circular_primes_less_million = filter isCircularPrime (takeWhile (<1000000) primes)
+
+-- Main
+main :: IO ()
+main = print (length circular_primes_less_million)

@@ -26,3 +26,7 @@ abundantTuple x = case find (\a -> isAbundant (x-a)) (takeWhile (<x) abundantNum
                        Nothing -> Nothing
 
 abundantTuples = [ t | n <- [1..28123], let mt = abundantTuple n, mt /= Nothing, let Just t = mt ]
+
+-- Main
+main :: IO ()
+main = print sumNotAbundantSumNumbers

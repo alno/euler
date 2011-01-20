@@ -12,3 +12,7 @@ seqLen = seqLenFrom 1
 seqLens = map (\x -> (x,seqLen x)) [1..999999]
 
 maxTuple = maximumBy (compare `on` snd) seqLens
+
+-- Main
+main :: IO ()
+main = print "Not completed"

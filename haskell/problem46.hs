@@ -19,3 +19,7 @@ isSumOfPrimeAndSquare = isSumOfPrimeAndSquareFrom 0
 notSumOfPrimeAndSquare = not . isSumOfPrimeAndSquare
 
 notSumNums = filter notSumOfPrimeAndSquare [1,3..]
+
+-- Main
+main :: IO ()
+main = print (head notSumNums)

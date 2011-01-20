@@ -35,3 +35,7 @@ intersectSorted l1@(h1:t1) l2@(h2:t2) | h1 < h2  = intersectSorted t1 l2
 
 truncatablePrimes = concat (zipWith intersectSorted truncatablePrimesL truncatablePrimesR)
 sumTruncatablePrimes = sum truncatablePrimes
+
+-- Main
+main :: IO ()
+main = print sumTruncatablePrimes

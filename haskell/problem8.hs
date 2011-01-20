@@ -28,3 +28,7 @@ digits = map digitToInt number
 digit_prods = [ foldl1 (*) (take len (drop i digits)) | i <- [0..length digits - len - 1] ]
 
 max_digit_prod = foldl1 max digit_prods
+
+-- Main
+main :: IO ()
+main = print max_digit_prod

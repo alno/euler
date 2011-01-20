@@ -13,3 +13,7 @@ primes = 2 : 3 : filter (noDivisors primes) [ 6*n+ofs | n <- [1..], ofs <- [-1,1
 isPrime = noDivisors primes
 
 sum_2000000 = sum (takeWhile (\x -> x < 2000000) primes)
+
+-- Main
+main :: IO ()
+main = print sum_2000000

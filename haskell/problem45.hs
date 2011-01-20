@@ -14,3 +14,9 @@ isPentagonal x = s*s == y && (s+1) `mod` 6 == 0 where y = 24 * x + 1
 hexagonalNums = [ n*(2*n-1) | n <- [1..] ]
 
 tripleNums = filter isPentagonal (filter isTriangle hexagonalNums)
+
+nextTripleNum = head (dropWhile (<=40755) tripleNums)
+
+-- Main
+main :: IO ()
+main = print nextTripleNum

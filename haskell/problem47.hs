@@ -40,3 +40,7 @@ firstFourFor (n1:t@(n2:n3:n4:_)) | n2 == n1 + 1 && n3 == n2 + 1 && n4 == n3 + 1 
                                  | otherwise = firstFourFor t
 
 firstFour = firstFourFor nums
+
+-- Main
+main :: IO ()
+main = print firstFour

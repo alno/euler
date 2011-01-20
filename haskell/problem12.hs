@@ -45,3 +45,8 @@ divisorCountForTriangle n | n `mod` 2 == 0 = divisorCount (n `div` 2) * divisorC
                           | otherwise = divisorCount n * divisorCount ((n+1) `div` 2)
 
 firstWithMoreThan500Divisors2 = find (\x -> snd x >= 500 ) (map (\n -> (n*(n+1) `div` 2, divisorCountForTriangle n)) [1..])
+
+
+-- Main
+main :: IO ()
+main = print firstWithMoreThan500Divisors2

@@ -8,3 +8,7 @@ size = 20
 pathCount n = fact (2*n) `div` fn `div` fn where fn = fact n
 
 pathCount20 = pathCount 20
+
+-- Main
+main :: IO ()
+main = print pathCount20

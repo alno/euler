@@ -39,3 +39,7 @@ familySize number = maximum (map length ([]:families number))
 primesWithFamilySize = map (\p -> (p,familySize p)) primes
 
 primeWithFamilyOf8 = head (filter (\t -> snd t >= 8) primesWithFamilySize)
+
+-- Main
+main :: IO ()
+main = print primeWithFamilyOf8

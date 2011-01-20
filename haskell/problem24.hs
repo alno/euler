@@ -21,3 +21,7 @@ revDigitPermutation = revDigitPermutationFrom revDigits
 digitPermutation i = reverse p where Just p = revDigitPermutation i
 
 perm_1000000 = digitPermutation 999999
+
+-- Main
+main :: IO ()
+main = print perm_1000000
