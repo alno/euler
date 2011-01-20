@@ -19,6 +19,7 @@ There are my solutions for Euler Project problems.
 [{Problem 19}[http://projecteuler.net/index.php?section=problems&id=19]] Haskell, Ruby
 [{Problem 20}[http://projecteuler.net/index.php?section=problems&id=20]] Haskell
 [{Problem 21}[http://projecteuler.net/index.php?section=problems&id=21]] Haskell
+[{Problem 22}[http://projecteuler.net/index.php?section=problems&id=22]] Haskell
 [{Problem 23}[http://projecteuler.net/index.php?section=problems&id=23]] Haskell
 [{Problem 24}[http://projecteuler.net/index.php?section=problems&id=24]] Haskell
 [{Problem 25}[http://projecteuler.net/index.php?section=problems&id=25]] Haskell
@@ -39,6 +40,7 @@ There are my solutions for Euler Project problems.
 [{Problem 52}[http://projecteuler.net/index.php?section=problems&id=52]] Haskell
 [{Problem 53}[http://projecteuler.net/index.php?section=problems&id=53]] Haskell
 [{Problem 55}[http://projecteuler.net/index.php?section=problems&id=55]] Haskell
+[{Problem 56}[http://projecteuler.net/index.php?section=problems&id=56]] Haskell
 [{Problem 57}[http://projecteuler.net/index.php?section=problems&id=57]] Haskell
 [{Problem 58}[http://projecteuler.net/index.php?section=problems&id=58]] Haskell
 [{Problem 63}[http://projecteuler.net/index.php?section=problems&id=63]] Haskell
