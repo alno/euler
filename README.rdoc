@@ -32,6 +32,7 @@ There are my solutions for Euler Project problems.
 [{Problem 38}[http://projecteuler.net/index.php?section=problems&id=38]] Haskell
 [{Problem 39}[http://projecteuler.net/index.php?section=problems&id=39]] Haskell
 [{Problem 41}[http://projecteuler.net/index.php?section=problems&id=41]] Haskell
+[{Problem 43}[http://projecteuler.net/index.php?section=problems&id=43]] Haskell
 [{Problem 45}[http://projecteuler.net/index.php?section=problems&id=45]] Haskell
 [{Problem 46}[http://projecteuler.net/index.php?section=problems&id=46]] Haskell
 [{Problem 47}[http://projecteuler.net/index.php?section=problems&id=47]] Haskell
