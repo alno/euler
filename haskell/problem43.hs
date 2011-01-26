@@ -14,3 +14,6 @@ numbersFrom _ _ _ [] = [0]
 numbersFrom n a b digits = [ d * m + r | d <- digits, isValid n a b d, r <- numbersFrom (n+1) b d (delete d digits) ] where m = 10^(10-n)
 
 numbers = numbersFrom 1 0 0 [0..9]
+
+main :: IO ()
+main = print (sum numbers)
