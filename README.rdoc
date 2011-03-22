@@ -61,6 +61,7 @@ There are my solutions for Euler Project problems.
 [{Problem 69}[http://projecteuler.net/index.php?section=problems&id=69]] Haskell
 [{Problem 71}[http://projecteuler.net/index.php?section=problems&id=71]] Haskell
 [{Problem 76}[http://projecteuler.net/index.php?section=problems&id=76]] C++
+[{Problem 79}[http://projecteuler.net/index.php?section=problems&id=79]] Haskell
 [{Problem 81}[http://projecteuler.net/index.php?section=problems&id=81]] Ruby
 [{Problem 89}[http://projecteuler.net/index.php?section=problems&id=89]] Ruby
 [{Problem 92}[http://projecteuler.net/index.php?section=problems&id=92]] Haskell
