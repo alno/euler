@@ -81,6 +81,7 @@ There are my solutions for Euler Project problems.
 [{Problem 119}[http://projecteuler.net/index.php?section=problems&id=119]] Haskell
 [{Problem 120}[http://projecteuler.net/index.php?section=problems&id=120]] Haskell
 [{Problem 123}[http://projecteuler.net/index.php?section=problems&id=123]] Haskell
+[{Problem 131}[http://projecteuler.net/index.php?section=problems&id=131]] Haskell
 [{Problem 173}[http://projecteuler.net/index.php?section=problems&id=173]] Haskell
 [{Problem 179}[http://projecteuler.net/index.php?section=problems&id=179]] Haskell
 [{Problem 187}[http://projecteuler.net/index.php?section=problems&id=187]] Haskell
