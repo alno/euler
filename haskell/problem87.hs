@@ -1,5 +1,3 @@
--- Brute-force, need improvements
-
 import Data.List
 
 noDivisors []    x                  = True
@@ -14,16 +12,12 @@ primes = 2 : 3 : filter (noDivisors primes) [ 6*n+ofs | n <- [1..], ofs <- [-1,1
 -- Function to check is the number is prime
 isPrime = noDivisors primes
 
-conc a b = read (show a ++ show b)
+primes4 lim = concat [ primes3 (lim - p4*p4*p4*p4) p4 | p4 <- takeWhile (\p -> p*p*p*p < lim) primes ]
+primes3 lim p4 = concat [ primes2 (lim - p3*p3*p3) p4 p3 | p3 <- takeWhile (\p -> p*p*p < lim) primes ]
+primes2 lim p4 p3 = [ p2*p2 + p3*p3*p3 + p4*p4*p4*p4 | p2 <- takeWhile (\p -> p*p < lim) primes ]
 
-isAddPrime [] p = True
-isAddPrime (h:t) p = isPrime (conc p h) && isPrime (conc h p) && isAddPrime t p
-
-extendPrimeSet smallSet = [ p:op | p <- primes, op <- takeWhile (\op -> p > head op) smallSet, isAddPrime op p ]
-
-findPrimeSet 1 = map (\p -> [p]) primes
-findPrimeSet n = extendPrimeSet $ findPrimeSet (n-1)
+numOfPrimes = length $ nub $ primes4 (5*10^6)
 
 -- Main
 main :: IO ()
-main = print . sum . head $ findPrimeSet 5
+main = print "Not completed"
