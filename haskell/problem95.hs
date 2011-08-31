@@ -32,7 +32,7 @@ sumOfDivisors n = sumOf (primeFactorsExp n) - n
 
 mx = 1000000
 
-chainLengthF f c n | k >  mx     = Nothing                 
+chainLengthF f c n | k >  mx     = Nothing
                    | f >  k      = Nothing
                    | f == k      = Just (length c)
                    | elem k c    = Nothing

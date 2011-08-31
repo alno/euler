@@ -1,5 +1,5 @@
 
-        
+
 countsE :: [Integer]
 countsNE :: [Integer]
 

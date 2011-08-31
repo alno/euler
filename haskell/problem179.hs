@@ -19,14 +19,14 @@ nDivs = nDivsFrom 0
 
 divisorCountFor p (h:t) x | h > x     = p
                           | h * h > x = p * 2
-                          | c > 0     = divisorCountFor (p*(c+1)) t $! d 
-                          | otherwise = divisorCountFor p t $! d 
+                          | c > 0     = divisorCountFor (p*(c+1)) t $! d
+                          | otherwise = divisorCountFor p t $! d
   where (d,c) = nDivs x h
 
 divisorCount = divisorCountFor 1 primes
 
  -- Nums of divisors
-                           
+
 countPairsF a b i s | i >  10^7 = s
                     | a == b    = countPairsF b (divisorCount i) (i+1) $! (s+1)
                     | otherwise = countPairsF b (divisorCount i) (i+1) $! s

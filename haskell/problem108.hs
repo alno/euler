@@ -28,4 +28,3 @@ leastX = head (filter (\x -> solutions x > 1000) [1..])
 
 main :: IO ()
 main = print leastX
-

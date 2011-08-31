@@ -12,7 +12,7 @@ end
   currSumm = []
 
   currSumm << prevSumm[0] + currLine[0]
-  
+
   1.upto prevSumm.length - 1 do |j|
     currSumm << [ prevSumm[j-1], prevSumm[j] ].max + currLine[j]
   end

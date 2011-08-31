@@ -1,6 +1,6 @@
--- (pn-1)^n + (pn+1)^n = 2*pn^n + ... + 2 * n*pn | n % 2 = 1 
+-- (pn-1)^n + (pn+1)^n = 2*pn^n + ... + 2 * n*pn | n % 2 = 1
 --                     = 2*pn^n + ... + 2        | n % 2 == 0
-                    
+
 -- Brute-force solution
 
 noDivisors []    x                  = True
@@ -18,9 +18,8 @@ remainder n | n `mod` 2 == 1 = (2 * n * pn) `mod` (pn*pn)
 
 findFirstFrom n lim | remainder n > lim   = n
                     | otherwise           = findFirstFrom (n+1) $! lim
-                    
+
 findFirst = findFirstFrom 1
 
 main :: IO ()
 main = print (findFirst (10^10))
-

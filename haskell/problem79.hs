@@ -14,11 +14,11 @@ dropLast n = reverse . drop n . reverse
 onlyLeft n [] = True
 onlyLeft n ((l,r):t) | r == n && l /= n = False
                      | otherwise        = onlyLeft n t
-                     
+
 isInLeft n [] = False
 isInLeft n ((l,_):t) | l == n    = True
                      | otherwise = isInLeft n t
-                     
+
 dropLeft n [] = []
 dropLeft n ((l,r):t) | l == n    = dropLeft n t
                      | otherwise = (l,r):dropLeft n t
@@ -27,7 +27,7 @@ firstSymbol orderPairs = head [ n | n <- ['0'..'9'], isInLeft n orderPairs, only
 
 passwordAcc acc []   = reverse acc
 passwordAcc acc ords = passwordAcc (d:acc) (dropLeft d ords) where d = firstSymbol ords
-      
+
 password = passwordAcc []
 
 main :: IO ()

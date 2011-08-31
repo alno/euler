@@ -16,4 +16,3 @@ count = length (filter (\x -> is89Array ! sumDigitSquares x) [1..maxNum])
 
 main :: IO ()
 main = print count
-

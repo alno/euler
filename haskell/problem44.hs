@@ -25,7 +25,7 @@ primeFactorsExp = primeFactorsExpApp [] primes
 
 divisorsFact [] = [1]
 divisorsFact ((p,q):t) = [ p^i * tdi | i <- [0..q], tdi <- td ] where td = divisorsFact t
-      
+
 divisors = divisorsFact . primeFactorsExp
 
 -- Pentagonal
@@ -35,7 +35,7 @@ intSqrt n = truncate (sqrt (fromInteger n))
 
 isPentagonal x = s*s == y && (s+1) `mod` 6 == 0 where y = 24 * x + 1
                                                       s = intSqrt y
-                                                      
+
 pentagonal = [ n*(3*n-1) `div` 2 | n <- [0..] ]
 
 -- Possible indices for n

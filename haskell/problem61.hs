@@ -23,6 +23,6 @@ numbersExceptApp (h:t) p e | elem h e  = numbersExceptApp t p e
 numbersExcept = numbersExceptApp [0..length numberCats-1]
 
 nums = [ [n1,n2,n3,n4,n5,n6] | let l1 = 5, n1 <- octagonalNumbers, (n2,l2) <- numbersExcept n1 [l1], (n3,l3) <- numbersExcept n2 [l1,l2], (n4,l4) <- numbersExcept n3 [l1,l2,l3], (n5,l5) <- numbersExcept n4 [l1,l2,l3,l4], (n6,l6) <- numbersExcept n5 [l1,l2,l3,l4,l5], isConnected n6 n1 ]
-                                   
+
 main :: IO ()
 main = print (sum $ head nums)

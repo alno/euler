@@ -13,7 +13,7 @@ printNum (FixNum a) = map intToDigit a
 
 intToNumA i r | length r >= digNum = r
               | otherwise          = intToNumA di (mo:r) where (di,mo) = i `divMod` base
-              
+
 intToNum n = FixNum (intToNumA n [])
 
 -- Sum
@@ -21,7 +21,7 @@ intToNum n = FixNum (intToNumA n [])
 sumNumsA a r c1 c2 | length r >= digNum = r
 sumNumsA a r (d1:t1) (d2:t2)            = sumNumsA na (nd:r) t1 t2
   where (na,nd) = (d1 + d2 + a) `divMod` base
-        
+
 sumNums (FixNum n1) (FixNum n2) = FixNum (sumNumsA 0 [] (reverse n1) (reverse n2))
 
 -- Mul
@@ -47,7 +47,7 @@ instance Show FixNum where
 instance Num FixNum where
   (+) = sumNums
   (*) = mulNums
-  
+
   abs x = undefined
   signum x = undefined
 
@@ -57,13 +57,12 @@ instance Num FixNum where
 
 expNum n 0 = 1
 expNum n 1 = n
-expNum n e | m == 0 = n2 * n2 
+expNum n e | m == 0 = n2 * n2
            | m == 1 = n2 * n2 * n
   where (en,m) = e `divMod` 2
         n2 = expNum n en
-        
+
 lastDigits = (expNum (intToNum 2) 7830457) * (intToNum 28433) + 1
 
 main :: IO ()
 main = print lastDigits
-

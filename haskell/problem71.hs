@@ -13,7 +13,7 @@ nextApp mx den pnum pden | den > maxDenominator = mx
                          | otherwise            = ((nextApp $! (min mx nx)) $! (den+1)) pnum pden
   where num = ((pnum * den) `div` pden ) + 1
         nx  = num % den
-        
+
 next x = nextApp (x + 1%1) 1 (numerator x) (denominator x)
 
 prevApp mx den pnum pden | den > maxDenominator = mx

@@ -1,5 +1,5 @@
 minLength = 50
-        
+
 countsE :: [Integer]
 countsNE :: [Integer]
 

@@ -86,7 +86,7 @@ File.open File.join( File.dirname(__FILE__), '..', 'data', 'problem89.txt' ) do 
     newnum, s = minimal_form num
 
     saved += s
-  end  
+  end
 end
 
 puts saved

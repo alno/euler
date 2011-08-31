@@ -18,7 +18,7 @@ next n = sum $ map (fact.digitToInt) $ show n
 seqLen' len s@(h:t) | elem n s = len
                     | otherwise = seqLen' (len+1) (n:s)
   where n = next h
-        
+
 seqLen n = seqLen' 1 [n]
 
 seqLens = [ (n,seqLen n) | n <- [1..10^6] ]

@@ -10,11 +10,11 @@ end
 end
 
 1.upto @values.first.size - 1 do |j|
-  
+
   @values.each_with_index do |s,i|
     @sums[i].push @sums[i].last + s[j]
   end
-  
+
   improved = true
   while improved
     improved = false
@@ -28,7 +28,7 @@ end
       end
     end
   end
-  
+
 end
 
 puts @sums.map{|s|s.last}.min
