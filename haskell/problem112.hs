@@ -16,7 +16,7 @@ isBouncy = isBouncy' . show
 findBouncyRatio' b nb (h:t) ratio | nb * ratio == b  = nb + b
                                   | isBouncy h       = findBouncyRatio' (b+1) nb t ratio
                                   | otherwise        = findBouncyRatio' b (nb+1) t ratio
-                              
+
 findBouncyRatio = findBouncyRatio' 0 1 [2..]
 
 main = print $ findBouncyRatio 99

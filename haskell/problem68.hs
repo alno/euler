@@ -47,4 +47,3 @@ numSeries = do
   return $ read ss
 
 main = print $ maximum numSeries
-

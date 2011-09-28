@@ -7,7 +7,7 @@ lim = 2*10^6
 best t1@(a1,d1) t2@(a2,d2) | d2 < d1   = t2
                            | otherwise = t1
 
-nearest' bv n m | r >= lim && m == 1 = bv 
+nearest' bv n m | r >= lim && m == 1 = bv
                 | r >= lim           = nearest' (best bv v) (n+1) 1
                 | otherwise          = nearest' (best bv v) n (m+1)
   where r = numRects n m

@@ -12,7 +12,7 @@ primes = 2 : 3 : filter (noDivisors primes) [ 6*n+ofs | n <- [1..], ofs <- [-1,1
 isPrime x = noDivisors primes x
 
 -- For number n = П(pi^ki) where pi are different primes let P = П(1-1/pi) and M = {pi}
--- Then: 
+-- Then:
 --   coprimeCount n = n * P = phi
 --   resilence n = phi / (n-1) = ((n-1) * P + P) / (n-1) = P + P/(n-1)
 --   resilence n < limit => P < limit
@@ -20,12 +20,12 @@ isPrime x = noDivisors primes x
 limit = 15499 % 94744
 
 nextPrime n = head $ dropWhile (<=n) primes
-numbersWithRes = [ (n, r) | mults <- tail $ inits primes, 
+numbersWithRes = [ (n, r) | mults <- tail $ inits primes,
                             let p = product $ map (\x -> 1 - 1 % x) mults,
                             p < limit, -- Optimization
-                            prod <- [1..nextPrime $ last mults - 1], 
+                            prod <- [1..nextPrime $ last mults - 1],
                             let n = prod * product mults,
                             let r = p + p / (n % 1 - 1), -- Resilence
                             r < limit ]
-                            
+
 main = print $ fst $ head numbersWithRes

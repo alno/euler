@@ -26,7 +26,7 @@ coprimeCount' res (h:t) x | h > x              = res
                           | otherwise          = let (d,m) = divMod x h in
                                                      if  m == 0 then let (d,c) = nDivs x h in (coprimeCount' $! (res * (h-1) * h ^ (c-1))) t d
                                                                 else coprimeCount' res t x
-                                                                       
+
 coprimeCount = coprimeCount' 1 primes
 
 isPerm x y = sort (show x) == sort (show y)
